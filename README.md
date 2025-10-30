@@ -72,7 +72,10 @@ Books: `Mechanical Mastery` or `Engineering 301` or `Advanced Electronics` or `E
 * Heating elements for oil distillation furnace
 
 * Crude oil
-Конечно, вот перевод этого раздела на английский язык:
+
+* fuel oil  -  with by-products during crafting (Gasoline, Diesel, Kerosene)
+
+* motor oil
 
 ---
 
@@ -98,7 +101,3 @@ This repository has two categories of branches:
     * `latest-experimental-builds-cdda-Pull-request`
 
     These are your entry points! All community proposals must be sent **ONLY** to these branches.
-
-* fuel oil  -  with by-products during crafting (Gasoline, Diesel, Kerosene)
-
-* motor oil
