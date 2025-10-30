@@ -89,9 +89,9 @@ This repository has two categories of branches:
 
 1.  **Protected Branches:**
     * `main`
-    * `0.H-Herbert`
-    * `0.I`
-    * `latest-experimental-builds-cdda`
+    * `0.H-Herbert-main`
+    * `0.I-main`
+    * `latest-experimental-builds-cdda-main`
 
     These branches are **LOCKED** from external Pull Requests. They contain only verified and stable code. Any PR sent to these branches will be automatically rejected or blocked.
 
