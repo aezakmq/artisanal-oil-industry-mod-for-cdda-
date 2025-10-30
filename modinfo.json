@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "artisanal_oil_industry",
+    "name": "artisanal oil industry",
+    "authors": [ "aezakmq" ],
+    "description": "Modification adding artisanal oil extraction and processing into different fractions, such as gasoline, diesel, kerosene, and fuel oil.",
+    "category": "buildings",
+    "dependencies": [ "dda" ]
+  }
+
+]

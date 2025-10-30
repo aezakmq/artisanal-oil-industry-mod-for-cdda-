@@ -1,0 +1,191 @@
+[
+  {
+    "id": "oil_derrick_item",
+    "type": "TOOL",
+    "name": { "str": "Oil derrick" },
+    "description": "Complex artisanal structure for extracting crude oil, folded up for transport.",
+    "weight": "250 kg",
+    "volume": "500 L",
+    "symbol": "T",
+    "color": "dark_gray",
+    "material": [ "steel" ],
+    "flags": [ "NO_UNLOAD", "ALWAYS_TWOHAND" ]
+  },
+{
+    "id": "fluid_crude_oil",
+    "type": "AMMO",
+    "name": {
+      "str": "Crude oil"
+    },
+    "description": "Thick, black, oily liquid. Can be processed into fuel.",
+    "category": "fuel",
+    "weight": "750 mg",
+    "volume": "200 ml",
+    "count": 250,
+    "stack_size": 200,
+    "price": 0,
+    "price_postapoc": 0,
+    "phase": "liquid",
+    "container": "jerrycan",
+    "material": [
+      "fluid_crude_oil"
+    ],
+    "symbol": "~",
+    "color": "dark_gray",
+    "ammo_type": "fluid_crude_oil",
+    "damage": {
+      "damage_type": "heat",
+      "amount": 5,
+      "armor_penetration": 5
+    },
+  "range": 4,
+  "effects": [
+    "FLAME",
+    "STREAM",
+    "INCENDIARY",
+    "NEVER_MISFIRES"
+  ]
+},
+ {
+  "type": "TOOL",
+  "id": "fake_oil_derrick",
+  "name": {
+    "str": "Oil derrick (fake object)"
+  },
+  "description": "Technical fake tool.",
+  "flags": [
+    "ZERO_WEIGHT",
+    "DEBUG_ONLY"
+  ],
+  "weight": "1 g",
+  "volume": "1 ml",
+  "symbol": "T",
+  "color": "dark_gray",
+  "qualities": [
+    [ "OIL_PUMP", 1 ]
+  ]
+},
+{
+    "id": "oil_pump_tool_corded",
+    "type": "TOOL",
+    "name": {
+      "str": "Pump for an oil derrick"
+    },
+    "description": "Portable electric pump for oil derricks.",
+    "weight": "20000 g",
+    "volume": "10 L",
+    "price": "1000 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "{",
+    "color": "light_gray",
+    "ammo": [
+      "battery"
+    ],
+    "charges_per_use": 500,
+    "use_action": [
+      {
+        "type": "link_up",
+        "cable_length": 12,
+        "charge_rate": "36000 W"
+      }
+    ],
+    "flags": [
+      "NONCONDUCTIVE"
+    ],
+    "melee_damage": {
+      "bash": 5
+    }
+  },
+{
+    "id": "oil_refinery_item",
+    "type": "TOOL",
+    "name": { "str": "Furnace for oil distillation" },
+    "description": "Furnace for distilling oil into various types of fuel.",
+    "weight": "350 kg",
+    "volume": "400 L",
+    "symbol": "R",
+    "color": "light_gray",
+    "material": [ "steel" ],
+    "flags": [ "NO_UNLOAD", "ALWAYS_TWOHAND" ]
+  },
+{
+  "type": "TOOL",
+  "name": {
+    "str": "Furnace for oil distillation (fake object)"
+  },
+  "description": "Technical fake instrument.",
+  "flags": [
+    "ZERO_WEIGHT",
+    "DEBUG_ONLY"
+  ],
+  "weight": "1 g",
+  "volume": "1 ml",
+  "symbol": "@",
+  "color": "red",
+  "id": "fake_oil_refinery",
+  "qualities": [
+    [ "DISTILL", 3 ],
+    [ "COOK", 2 ],
+    [ "CONTAIN", 2 ]
+  ]
+},
+{
+  "id": "oil_refinery_heater",
+  "type": "TOOL",
+  "name": {
+    "str": "Heating elements for oil distillation furnace"
+  },
+  "description": "Powerful portable electric heating elements for heating furnace during oil distillation.",
+  "weight": "15 kg",
+  "volume": "10 L",
+  "price": 3500,
+  "price_postapoc": 200,
+  "symbol": "E",
+  "color": "red",
+  "material": [ "steel", "copper" ],
+  "flags": [ 
+    "NO_UNLOAD",
+    "ALWAYS_TWOHAND"
+  ],
+  "use_action": [
+    {
+      "type": "link_up",
+      "cable_length": 4,
+      "charge_rate": "10000 W"
+    }
+  ]
+},
+{
+  "id": "fuel_oil",
+  "type": "AMMO",
+  "name": {
+    "str": "fuel oil"
+  },
+  "description": "Thick, dark, heavy fraction of oil.",
+  "category": "fuel",
+  "weight": "750 mg",
+  "volume": "200 ml",
+  "count": 250,
+  "stack_size": 200,
+  "price": 0,
+  "price_postapoc": 0,
+  "phase": "liquid",
+  "container": "jerrycan",
+  "material": [
+    "fuel_oil"
+  ],
+  "symbol": "~",
+  "color": "dark_gray",
+  "ammo_type": "fuel_oil"
+}
+
+
+]
+
+
+
+
+
