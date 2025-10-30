@@ -72,6 +72,32 @@ Books: `Mechanical Mastery` or `Engineering 301` or `Advanced Electronics` or `E
 * Heating elements for oil distillation furnace
 
 * Crude oil
+Конечно, вот перевод этого раздела на английский язык:
+
+---
+
+### 🤝 How to Contribute
+
+This repository uses strict rules (GitHub Rulesets) to ensure the stability and security of the main branches. We welcome all contributions, but we ask you to follow this process to ensure your changes are accepted.
+
+#### ⚠️ Important Rule: Where to Send Your Pull Request (PR)
+
+This repository has two categories of branches:
+
+1.  **Protected Branches:**
+    * `main`
+    * `0.H-Herbert`
+    * `0.I`
+    * `latest-experimental-builds-cdda`
+
+    These branches are **LOCKED** from external Pull Requests. They contain only verified and stable code. Any PR sent to these branches will be automatically rejected or blocked.
+
+2.  **Open Branches (for PRs):**
+    * `0.H-Herbert-Pull-request`
+    * `0.I-Pull-request`
+    * `latest-experimental-builds-cdda-Pull-request`
+
+    These are your entry points! All community proposals must be sent **ONLY** to these branches.
 
 * fuel oil  -  with by-products during crafting (Gasoline, Diesel, Kerosene)
 
