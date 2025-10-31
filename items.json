@@ -1,5 +1,81 @@
 [
   {
+    "id": "oil_flamethrower",
+    "copy-from": "flamethrower_base",
+    "looks_like": "flamethrower",
+    "type": "GUN",
+    "name": { "str": "Oil-powered flamethrower" },
+    "description": "A makeshift flamethrower that uses crude oil as fuel. It's less efficient than military models but can be crafted from scavenged parts. The oil burns hot and sticky, making it effective against groups of enemies.",
+    "weight": "12000 g",
+    "volume": "75000 ml",
+    "longest_side": "600 mm",
+    "price": 50000,
+    "price_postapoc": 3000,
+    "to_hit": -2,
+    "range": 5,
+    "dispersion": 400,
+    "durability": 6,
+    "modes": [ [ "DEFAULT", "Jet", 1 ], [ "AUTO", "Spray", 3 ] ],
+    "extend": { "flags": [ "BELTED", "ONLY_ONE", "PRIMITIVE_RANGED_WEAPON", "IS_ARMOR" ] },
+    "armor_data": {
+      "armor": [
+        {
+          "material": [
+            { "type": "steel", "covered_by_mat": 60, "thickness": 2 },
+            { "type": "plastic", "covered_by_mat": 100, "thickness": 1 }
+          ],
+          "volume_encumber_modifier": 0.25,
+          "encumbrance": [ 0, 65 ],
+          "coverage": 75,
+          "covers": [ "torso" ],
+          "specifically_covers": [ "torso_hanging_back" ]
+        }
+      ]
+    },
+    "valid_mod_locations": [ [ "rail mount", 1 ], [ "grip", 1 ], [ "sights mount", 1 ], [ "stock mount", 1 ], [ "underbarrel mount", 1 ] ],
+    "ammo": [ "fluid_crude_oil" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "watertight": true,
+        "rigid": true,
+        "ammo_restriction": { "fluid_crude_oil": 1000 }
+      }
+    ],
+    "melee_damage": { "bash": 8 }
+  },
+  {
+    "id": "oil_flamethrower_fuel",
+    "type": "AMMO",
+    "name": { "str_sp": "crude oil fuel mix" },
+    "description": "A mixture of crude oil and additives that can be used as flamethrower fuel. It's thick and burns with a heavy, sooty flame.",
+    "category": "fuel",
+    "weight": "750 mg",
+    "volume": "200 ml",
+    "count": 250,
+    "stack_size": 200,
+    "price": 100,
+    "price_postapoc": 50,
+    "phase": "liquid",
+    "container": "jerrycan",
+    "material": [ "fluid_crude_oil" ],
+    "symbol": "~",
+    "color": "dark_gray",
+    "ammo_type": "fluid_crude_oil",
+    "damage": {
+      "damage_type": "heat",
+      "amount": 6,
+      "armor_penetration": 3
+    },
+    "range": 5,
+    "effects": [
+      "FLAME",
+      "STREAM",
+      "INCENDIARY",
+      "NEVER_MISFIRES"
+    ]
+  },
+  {
     "id": "oil_derrick_item",
     "type": "TOOL",
     "name": { "str": "Oil derrick" },
