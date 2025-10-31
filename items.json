@@ -16,6 +16,7 @@
     "dispersion": 400,
     "durability": 6,
     "modes": [ [ "DEFAULT", "Jet", 1 ], [ "AUTO", "Spray", 3 ] ],
+    "skill": "launcher",
     "extend": { "flags": [ "BELTED", "ONLY_ONE", "PRIMITIVE_RANGED_WEAPON", "IS_ARMOR" ] },
     "armor_data": {
       "armor": [
@@ -259,3 +260,4 @@
 }
 
 ]
+
